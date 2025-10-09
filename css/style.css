@@ -9,7 +9,7 @@
 
 /* o corpo do site */
 body {
-    background-color: #202124;
+    background-color: white;
     color: #e8eaed;
     font-family: Arial, sans-serif;
     display: flex;
@@ -19,7 +19,7 @@ body {
 
 /* onde deixar on links em branco */
 a {
-    color: #e8eaed;
+    color: black;
     text-decoration: none;
 }
 
@@ -57,17 +57,15 @@ main {
     margin-bottom: 28px;
 }
 
-
-
-
 /* a caixinha onde tem os negocios e cria o bagui pra pesquisa */
 .search-box {
     display: flex;
     align-items: center;
-    border: 1px solid #5f6368;
+    border: 1px solid black;
     border-radius: 24px;
-    background-color: #303134;
+    background-color: transparent;
     padding: 10px 20px;
+    color: black;
     gap: 15px;
     width: 500px;
     max-width: 584px; 
@@ -76,8 +74,8 @@ main {
 
 /* caixa de pesquisa */
 .search-box:hover {
-    background-color: #3c4043;
-    border-color: #9aa0a6;
+    background-color: transparent;
+    border-color:black;
 }
 
 /* area de pesquisa */
@@ -99,12 +97,22 @@ main {
     margin-top: 28px;
 }
 
+.search-button{
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    color: black;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 /* botão de sorte */
 .lucky-button {
-    background-color: #303134;
-    border: 1px solid #303134;
-    border-radius: 4px;
-    color: #e8eaed;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    color: black;
     padding: 10px 16px;
     font-size: 14px;
     cursor: pointer;
@@ -112,10 +120,51 @@ main {
 
 /* pontape do baguio */
 footer {
-    background-color: #171717;
+    background-color: rgb(32, 28, 28);
     width: 100%;
-    font-size: 14px;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    
 }
 
+/*  brasil */
+.country{
+    padding: 15px 30px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-size: 15px;
+    color: rgb(255, 255, 255)
+}
 
+/* direçoes de links */
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
 
+.footer-links a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.left-links, .right-links{
+    display: flex;
+}
+
+@media(max-width: 768){
+    .footer-links{
+        flex-direction: column
+    }
+
+    .left-links, .right-links{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
